@@ -7,109 +7,205 @@
   <meta property="og:title" content="Archit Dogra — AI Engineer">
   <meta property="og:description" content="AI applications, RAG systems and intelligent automation.">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#080b14">
   <title>Archit Dogra — AI Engineer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-background" aria-hidden="true">
+    <span class="gradient gradient-one"></span>
+    <span class="gradient gradient-two"></span>
+    <span class="grid"></span>
+  </div>
+
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Go to home">AD</a>
-    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <a class="brand" href="#home" aria-label="Archit Dogra, home">
+      <span class="brand-mark">AD</span>
+      <span class="brand-name">Archit Dogra</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
     <nav aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <a class="header-link" href="mailto:architdora07@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <p class="kicker">Hello, I'm Archit.</p>
-      <h1>AI Engineer building useful, intelligent products.</h1>
-      <p class="hero-copy">I work across AI, automation and full-stack development to turn ideas into practical applications.</p>
-      <div class="actions">
-        <a class="button primary" href="#projects">View projects</a>
-        <a class="button" href="https://github.com/Archit0720" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      <div class="hero-copy reveal">
+        <div class="status"><span></span> AI Engineer</div>
+        <p class="intro">Hi, I'm Archit Dogra.</p>
+        <h1>I build AI products that feel <span>useful, clear and human.</span></h1>
+        <p class="hero-text">I create practical AI applications, RAG systems, intelligent agents and automation tools—from idea to working product.</p>
+
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="https://github.com/Archit0720" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="hero-links" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span>•</span>
+          <a href="mailto:architdora07@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="AI engineering illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="visual-core">
+          <span class="core-label">AD</span>
+          <strong>AI</strong>
+          <small>Engineer</small>
+        </div>
+        <div class="floating-card card-agent">
+          <span class="card-icon">✦</span>
+          <div><small>BUILDING</small><strong>AI Agents</strong></div>
+        </div>
+        <div class="floating-card card-rag">
+          <span class="card-icon">⌁</span>
+          <div><small>EXPLORING</small><strong>RAG Systems</strong></div>
+        </div>
+        <div class="floating-card card-stack">
+          <span class="signal"></span>
+          <div><small>WORKFLOW</small><strong>Idea → Product</strong></div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="section-heading">
-        <p class="kicker">About</p>
-        <h2>I enjoy building AI that people can actually use.</h2>
-      </div>
-      <div class="about-copy">
-        <p>I'm an AI Engineer focused on LLM applications, retrieval-augmented generation, intelligent automation and clean full-stack experiences.</p>
-        <p>I like working end to end—from exploring a problem and preparing data to building the backend, interface and final user experience.</p>
+    <section class="quick-strip" aria-label="Key areas">
+      <div><span>01</span><strong>LLM Applications</strong></div>
+      <div><span>02</span><strong>AI Agents</strong></div>
+      <div><span>03</span><strong>Automation</strong></div>
+      <div><span>04</span><strong>Full-Stack AI</strong></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-label reveal"><span>01</span> About</div>
+      <div class="about-content reveal">
+        <h2>Engineering at the intersection of <span>AI, automation and product.</span></h2>
+        <div class="about-grid">
+          <p>I'm an AI Engineer who enjoys turning complex ideas into simple, usable applications. My focus is on building dependable LLM workflows, retrieval systems and automation that solve real problems.</p>
+          <p>I work across the stack: understanding the problem, preparing data, building APIs, integrating models and creating the interface people actually use.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="kicker">Projects</p>
-        <h2>Things I've built.</h2>
-        <p>Every card opens the project repository on GitHub.</p>
+    <section class="section projects-section" id="projects">
+      <div class="section-label reveal"><span>02</span> Projects</div>
+      <div class="section-heading reveal">
+        <h2>Selected projects.</h2>
+        <p>Real builds from my GitHub. Click any card to view the repository.</p>
       </div>
 
       <div class="project-grid">
-        <a class="project-card" href="https://github.com/Archit0720/OmniMemory" target="_blank" rel="noopener noreferrer">
-          <div class="project-top"><span>Featured</span><span aria-hidden="true">↗</span></div>
-          <h3>OmniMemory</h3>
-          <p>A TypeScript-based project exploring useful memory capabilities for intelligent applications.</p>
-          <ul><li>TypeScript</li><li>AI</li></ul>
+        <a class="project-card featured reveal" href="https://github.com/Archit0720/OmniMemory" target="_blank" rel="noopener noreferrer">
+          <div class="project-visual memory-visual" aria-hidden="true">
+            <div class="memory-node main-node">M</div>
+            <span class="memory-node node-a"></span>
+            <span class="memory-node node-b"></span>
+            <span class="memory-node node-c"></span>
+            <i class="line line-a"></i><i class="line line-b"></i><i class="line line-c"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Featured project</span><b>01</b></div>
+            <h3>OmniMemory</h3>
+            <p>An AI-focused TypeScript project exploring useful memory capabilities for intelligent applications.</p>
+            <ul><li>TypeScript</li><li>AI</li><li>Memory</li></ul>
+            <span class="project-link">View repository <b>↗</b></span>
+          </div>
         </a>
 
-        <a class="project-card" href="https://github.com/Archit0720/RAG-ChatBot---Feedback-based-" target="_blank" rel="noopener noreferrer">
-          <div class="project-top"><span>AI Application</span><span aria-hidden="true">↗</span></div>
-          <h3>Feedback-Based RAG Chatbot</h3>
-          <p>A retrieval-augmented chatbot that answers questions from supplied text and can provide alternate responses based on feedback.</p>
-          <ul><li>RAG</li><li>LLM</li><li>HTML</li></ul>
+        <a class="project-card reveal" href="https://github.com/Archit0720/RAG-ChatBot---Feedback-based-" target="_blank" rel="noopener noreferrer">
+          <div class="project-visual rag-visual" aria-hidden="true">
+            <div class="document"><span></span><span></span><span></span></div>
+            <div class="chat-bubble">?</div>
+            <div class="spark">✦</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>RAG application</span><b>02</b></div>
+            <h3>Feedback-Based RAG Chatbot</h3>
+            <p>Ask questions from supplied text and receive alternate answers when the first response is not enough.</p>
+            <ul><li>RAG</li><li>LLM</li><li>HTML</li></ul>
+            <span class="project-link">View repository <b>↗</b></span>
+          </div>
         </a>
 
-        <a class="project-card" href="https://github.com/Archit0720/Custom-Agent-Chatbot" target="_blank" rel="noopener noreferrer">
-          <div class="project-top"><span>Conversational AI</span><span aria-hidden="true">↗</span></div>
-          <h3>Custom Agent Chatbot</h3>
-          <p>Create a conversational agent inspired by a favourite movie, book or anime character.</p>
-          <ul><li>Python</li><li>Agents</li><li>Chatbot</li></ul>
+        <a class="project-card reveal" href="https://github.com/Archit0720/Custom-Agent-Chatbot" target="_blank" rel="noopener noreferrer">
+          <div class="project-visual agent-visual" aria-hidden="true">
+            <div class="agent-face"><span></span><span></span><i></i></div>
+            <div class="agent-ring"></div>
+            <span class="agent-dot dot-one"></span><span class="agent-dot dot-two"></span>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Conversational AI</span><b>03</b></div>
+            <h3>Custom Agent Chatbot</h3>
+            <p>Create a conversational agent inspired by a favourite movie, book or anime character.</p>
+            <ul><li>Python</li><li>Agents</li><li>Chatbot</li></ul>
+            <span class="project-link">View repository <b>↗</b></span>
+          </div>
         </a>
 
-        <a class="project-card" href="https://github.com/Archit0720/Low_Light_Image_Enhancement_With_Object_Detection" target="_blank" rel="noopener noreferrer">
-          <div class="project-top"><span>Computer Vision</span><span aria-hidden="true">↗</span></div>
-          <h3>Low-Light Image Enhancement</h3>
-          <p>Enhances low-light images, detects objects and lets users download the improved results.</p>
-          <ul><li>Computer Vision</li><li>Object Detection</li><li>HTML</li></ul>
+        <a class="project-card reveal" href="https://github.com/Archit0720/Low_Light_Image_Enhancement_With_Object_Detection" target="_blank" rel="noopener noreferrer">
+          <div class="project-visual vision-visual" aria-hidden="true">
+            <div class="scan-frame"><i></i><span class="scan-line"></span></div>
+            <div class="sun">✦</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Computer vision</span><b>04</b></div>
+            <h3>Low-Light Image Enhancement</h3>
+            <p>Enhances low-light images, detects objects and lets users download improved results.</p>
+            <ul><li>Vision</li><li>Detection</li><li>HTML</li></ul>
+            <span class="project-link">View repository <b>↗</b></span>
+          </div>
         </a>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="section-heading">
-        <p class="kicker">Skills</p>
-        <h2>Tools I use to build.</h2>
-      </div>
-      <div class="skill-list" aria-label="Technical skills">
-        <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
-        <span>Node.js</span><span>FastAPI</span><span>REST APIs</span><span>OpenAI</span>
-        <span>Azure AI</span><span>RAG</span><span>Prompt Engineering</span><span>Automation</span>
+    <section class="section skills-section" id="skills">
+      <div class="section-label reveal"><span>03</span> Skills</div>
+      <div class="skills-layout">
+        <div class="skills-copy reveal">
+          <h2>My current toolkit.</h2>
+          <p>Technologies I use to move from experiments to complete, maintainable applications.</p>
+        </div>
+        <div class="skill-cloud reveal" aria-label="Technical skills">
+          <span class="large">Python</span><span>TypeScript</span><span>React</span><span class="accent">OpenAI</span>
+          <span>Node.js</span><span>FastAPI</span><span class="large">RAG</span><span>REST APIs</span>
+          <span>Azure AI</span><span class="accent">AI Agents</span><span>Prompt Engineering</span><span>Automation</span>
+        </div>
       </div>
     </section>
 
     <section class="contact section" id="contact">
-      <p class="kicker">Contact</p>
-      <h2>Let's build something useful.</h2>
-      <p>If you'd like to discuss AI engineering, automation or a product idea, feel free to reach out.</p>
-      <div class="actions">
-        <a class="button primary" href="mailto:architdora07@gmail.com">Email me</a>
-        <a class="button" href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="contact-content reveal">
+        <p class="section-label"><span>04</span> Contact</p>
+        <h2>Have an interesting idea?</h2>
+        <p>Let's talk about AI engineering, automation or something useful we can build.</p>
+        <div class="actions center">
+          <a class="button primary" href="mailto:architdora07@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <span>© <span id="year"></span> Archit Dogra</span>
+    <p>Designed and built with clarity.</p>
     <div>
       <a href="https://github.com/Archit0720" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
