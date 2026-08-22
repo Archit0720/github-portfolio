@@ -1,1 +1,24 @@
-document.getElementById("year").textContent=new Date().getFullYear();const header=document.querySelector("header"),menu=document.querySelector(".menu");menu.addEventListener("click",()=>header.classList.toggle("open"));document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>header.classList.remove("open")));const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:0,transform:"translateY(20px)"},{opacity:1,transform:"translateY(0)"}],{duration:650,easing:"ease-out",fill:"both"});observer.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll(".section article,.project,.experience").forEach(el=>observer.observe(el));
+const year = document.getElementById("year");
+const header = document.querySelector(".site-header");
+const menuButton = document.querySelector(".menu-button");
+const navLinks = document.querySelectorAll("nav a");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+if (menuButton && header) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.textContent = isOpen ? "Close" : "Menu";
+  });
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    header?.classList.remove("open");
+    menuButton?.setAttribute("aria-expanded", "false");
+    if (menuButton) menuButton.textContent = "Menu";
+  });
+});

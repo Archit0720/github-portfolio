@@ -1,70 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Archit Dogra — AI Solutions Engineer building agentic AI systems, intelligent automation and full-stack AI products." />
-  <meta property="og:title" content="Archit Dogra — AI Solutions Engineer" />
-  <meta property="og:description" content="Agentic AI • Intelligent Automation • Full-Stack AI Products" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/preview.svg" />
-  <title>Archit Dogra — AI Solutions Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Archit Dogra is an AI Engineer building practical AI applications, RAG systems and intelligent automation.">
+  <meta property="og:title" content="Archit Dogra — AI Engineer">
+  <meta property="og:description" content="AI applications, RAG systems and intelligent automation.">
+  <meta property="og:type" content="website">
+  <title>Archit Dogra — AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise"></div><div class="glow glow-a"></div><div class="glow glow-b"></div>
-  <header>
-    <a class="brand" href="#home"><span>AD</span><b>ARCHIT DOGRA</b></a>
-    <button class="menu" aria-label="Open navigation">☰</button>
-    <nav><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
-    <a class="small-cta" href="assets/Archit_Dogra_Resume.pdf" download>Download résumé</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to home">AD</a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-copy reveal">
-        <div class="available"><i></i> Building intelligent systems for real business problems</div>
-        <p class="eyebrow">AI SOLUTIONS ENGINEER</p>
-        <h1>I turn complex workflows into <em>AI-powered products.</em></h1>
-        <p class="lead">I design and build agentic AI systems, automation pipelines and full-stack intelligence platforms—from raw data to decisions.</p>
-        <div class="actions"><a class="primary" href="#projects">Explore my work <span>→</span></a><a class="secondary" href="https://github.com/YOUR_USERNAME" target="_blank">View GitHub ↗</a></div>
-      </div>
-      <div class="code-card reveal">
-        <div class="card-head"><span class="dots">● ● ●</span><small>archit.profile</small></div>
-        <pre><span class="purple">const</span> <span class="cyan">engineer</span> = {
-  <span class="blue">focus</span>: <span class="green">"Applied AI"</span>,
-  <span class="blue">builds</span>: [<span class="green">"Agents"</span>, <span class="green">"Automation"</span>],
-  <span class="blue">strength</span>: <span class="green">"End-to-end execution"</span>,
-  <span class="blue">mindset</span>: <span class="green">"Business impact first"</span>
-};</pre>
-        <div class="mini-grid"><div>AI</div><div>API</div><div>ETL</div><div>UX</div></div>
+      <p class="kicker">Hello, I'm Archit.</p>
+      <h1>AI Engineer building useful, intelligent products.</h1>
+      <p class="hero-copy">I work across AI, automation and full-stack development to turn ideas into practical applications.</p>
+      <div class="actions">
+        <a class="button primary" href="#projects">View projects</a>
+        <a class="button" href="https://github.com/Archit0720" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <section class="metrics"><div><b>End-to-End</b><span>AI product development</span></div><div><b>Multi-Agent</b><span>Workflow orchestration</span></div><div><b>Full Stack</b><span>React, Node.js & Python</span></div><div><b>Enterprise</b><span>Automation mindset</span></div></section>
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="kicker">About</p>
+        <h2>I enjoy building AI that people can actually use.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I'm an AI Engineer focused on LLM applications, retrieval-augmented generation, intelligent automation and clean full-stack experiences.</p>
+        <p>I like working end to end—from exploring a problem and preparing data to building the backend, interface and final user experience.</p>
+      </div>
+    </section>
 
-    <section class="section split" id="about"><div><p class="eyebrow line">ABOUT ME</p><h2>Engineer. Builder.<br>Problem solver.</h2></div><div class="body-copy"><p>I build AI solutions that connect technology with measurable business value. My work sits at the intersection of generative AI, automation, full-stack engineering and data pipelines.</p><p>I enjoy owning the complete journey: understanding the workflow, structuring the data, orchestrating AI agents, designing the interface, integrating APIs and validating the final output.</p><div class="checks"><span>✓ Business-first problem solving</span><span>✓ Clean, maintainable architecture</span><span>✓ Reliable structured AI outputs</span><span>✓ Fast iteration with ownership</span></div></div></section>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="kicker">Projects</p>
+        <h2>Things I've built.</h2>
+        <p>Every card opens the project repository on GitHub.</p>
+      </div>
 
-    <section class="section" id="expertise"><p class="eyebrow line">EXPERTISE</p><h2>Where AI meets execution.</h2><p class="section-intro">A practical toolkit for turning ambiguous business requirements into dependable AI-enabled products.</p><div class="cards">
-      <article><i>✦</i><h3>Generative & Agentic AI</h3><p>LLM applications, prompt engineering, structured outputs, agent orchestration and validation.</p><div class="tags"><span>OpenAI</span><span>Azure OpenAI</span><span>SimplAI</span><span>Langflow</span></div></article>
-      <article><i>↯</i><h3>Intelligent Automation</h3><p>Business workflows that reduce repetitive effort and turn complex processes into reliable systems.</p><div class="tags"><span>Power Automate</span><span>Copilot Studio</span><span>REST APIs</span></div></article>
-      <article><i>⌘</i><h3>Full-Stack AI Products</h3><p>Modern interfaces, secure backend integrations and maintainable product architecture.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Python</span></div></article>
-      <article><i>◇</i><h3>Data & Intelligence Pipelines</h3><p>Ingestion, cleaning, extraction, classification and reporting pipelines for business decisions.</p><div class="tags"><span>Excel</span><span>ParallelAI</span><span>ETL</span></div></article>
-    </div></section>
+      <div class="project-grid">
+        <a class="project-card" href="https://github.com/Archit0720/OmniMemory" target="_blank" rel="noopener noreferrer">
+          <div class="project-top"><span>Featured</span><span aria-hidden="true">↗</span></div>
+          <h3>OmniMemory</h3>
+          <p>A TypeScript-based project exploring useful memory capabilities for intelligent applications.</p>
+          <ul><li>TypeScript</li><li>AI</li></ul>
+        </a>
 
-    <section class="section" id="projects"><p class="eyebrow line">SELECTED PROJECTS</p><h2>Systems built around outcomes.</h2><p class="section-intro">Representative work presented without exposing confidential data or proprietary implementation details.</p><div class="projects">
-      <article class="project p1"><div><small>01 / PROCUREMENT INTELLIGENCE</small><h3>AI-Powered Spend & Supplier Intelligence Platform</h3><p>Transforms procurement data into supplier consolidation opportunities, spend insights, risk indicators and actionable recommendations.</p></div><div class="deliver"><b>WHAT I DELIVERED</b><p>› Excel ingestion and AI-assisted data cleaning</p><p>› Supplier consolidation and spend-analysis experiences</p><p>› React interfaces connected to Node.js APIs and AI agents</p><div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>OpenAI</span></div></div></article>
-      <article class="project p2"><div><small>02 / AGENTIC AI</small><h3>BOM-Aware Cost Modelling System</h3><p>A multi-stage AI workflow for structured manufacturing cost breakdowns across materials, labour, utilities, capital, overheads and margins.</p></div><div class="deliver"><b>WHAT I DELIVERED</b><p>› Multi-agent prompts and structured JSON contracts</p><p>› Normalization and validation for consistent outputs</p><p>› Product, geography, quantity and currency context</p><div class="tags"><span>SimplAI</span><span>Python</span><span>Prompt Engineering</span></div></div></article>
-      <article class="project p3"><div><small>03 / NEWS INTELLIGENCE</small><h3>Automated Business News Monitoring Pipeline</h3><p>A scalable pipeline that discovers, extracts, classifies and structures relevant articles for faster business research.</p></div><div class="deliver"><b>WHAT I DELIVERED</b><p>› Monitoring and extraction API integrations</p><p>› Parallel processing for faster throughput</p><p>› Classification, summarization and reporting stages</p><div class="tags"><span>Python</span><span>ParallelAI</span><span>Multithreading</span></div></div></article>
-    </div></section>
+        <a class="project-card" href="https://github.com/Archit0720/RAG-ChatBot---Feedback-based-" target="_blank" rel="noopener noreferrer">
+          <div class="project-top"><span>AI Application</span><span aria-hidden="true">↗</span></div>
+          <h3>Feedback-Based RAG Chatbot</h3>
+          <p>A retrieval-augmented chatbot that answers questions from supplied text and can provide alternate responses based on feedback.</p>
+          <ul><li>RAG</li><li>LLM</li><li>HTML</li></ul>
+        </a>
 
-    <section class="section" id="experience"><p class="eyebrow line">EXPERIENCE</p><h2>Building enterprise AI, end to end.</h2><div class="experience"><div class="role"><i>▣</i><h3>Junior Engineer</h3><p>Enterprise AI & Automation</p><span>Current role</span></div><div class="bullets"><p>Developing AI-powered procurement, cost-modelling and risk-analysis solutions.</p><p>Creating agentic workflows using OpenAI, SimplAI, Langflow and ParallelAI.</p><p>Building React and TypeScript interfaces connected to Node.js and Python services.</p><p>Improving output reliability through prompt design, schemas, normalization and validation.</p></div></div><div class="stack"><span>Python</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>OpenAI</span><span>Azure OpenAI</span><span>SimplAI</span><span>ParallelAI</span><span>Langflow</span><span>Copilot Studio</span><span>Power Automate</span><span>REST APIs</span><span>Azure DevOps</span></div></section>
+        <a class="project-card" href="https://github.com/Archit0720/Custom-Agent-Chatbot" target="_blank" rel="noopener noreferrer">
+          <div class="project-top"><span>Conversational AI</span><span aria-hidden="true">↗</span></div>
+          <h3>Custom Agent Chatbot</h3>
+          <p>Create a conversational agent inspired by a favourite movie, book or anime character.</p>
+          <ul><li>Python</li><li>Agents</li><li>Chatbot</li></ul>
+        </a>
 
-    <section class="section contact" id="contact"><p class="eyebrow">LET'S BUILD SOMETHING USEFUL</p><h2>Have an AI problem worth solving?</h2><p>I’m interested in AI engineering, intelligent automation and full-stack product opportunities where execution matters.</p><div class="actions center"><a class="primary" href="mailto:YOUR_EMAIL">Email me</a><a class="secondary" href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn ↗</a></div></section>
+        <a class="project-card" href="https://github.com/Archit0720/Low_Light_Image_Enhancement_With_Object_Detection" target="_blank" rel="noopener noreferrer">
+          <div class="project-top"><span>Computer Vision</span><span aria-hidden="true">↗</span></div>
+          <h3>Low-Light Image Enhancement</h3>
+          <p>Enhances low-light images, detects objects and lets users download the improved results.</p>
+          <ul><li>Computer Vision</li><li>Object Detection</li><li>HTML</li></ul>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="kicker">Skills</p>
+        <h2>Tools I use to build.</h2>
+      </div>
+      <div class="skill-list" aria-label="Technical skills">
+        <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
+        <span>Node.js</span><span>FastAPI</span><span>REST APIs</span><span>OpenAI</span>
+        <span>Azure AI</span><span>RAG</span><span>Prompt Engineering</span><span>Automation</span>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="kicker">Contact</p>
+      <h2>Let's build something useful.</h2>
+      <p>If you'd like to discuss AI engineering, automation or a product idea, feel free to reach out.</p>
+      <div class="actions">
+        <a class="button primary" href="mailto:architdora07@gmail.com">Email me</a>
+        <a class="button" href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
-  <footer><span>© <b id="year"></b> Archit Dogra. Built with clarity and intent.</span><span><a href="https://github.com/YOUR_USERNAME">GitHub</a> · <a href="https://linkedin.com/in/YOUR_USERNAME">LinkedIn</a></span></footer>
+
+  <footer>
+    <span>© <span id="year"></span> Archit Dogra</span>
+    <div>
+      <a href="https://github.com/Archit0720" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:architdora07@gmail.com">Email</a>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
-</body></html>
+</body>
+</html>
