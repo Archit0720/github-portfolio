@@ -1,161 +1,288 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Archit Dogra — AI Engineer building practical AI products, RAG systems and automation tools.">
-  <meta name="theme-color" content="#080a12">
+  <meta name="description" content="Archit Dogra — AI Engineer specializing in Agentic AI, RAG, LLM workflows and intelligent applications.">
+  <meta name="theme-color" content="#f7f8fc">
   <title>Archit Dogra — AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/profile.jpg" type="image/jpeg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="progress" id="progress"></div>
 
-  <header class="header">
-    <a class="logo" href="#home" aria-label="Archit Dogra home"><span>AD</span><b>Archit Dogra</b></a>
-    <button class="menu" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
-    <nav>
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="Archit Dogra home">
+      <span class="brand-mark">AD</span>
+      <span class="brand-name">Archit Dogra</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about" data-tip="About"><span class="nav-icon">⌁</span><span class="nav-text">About</span></a>
+      <a href="#experience" data-tip="Experience"><span class="nav-icon">◷</span><span class="nav-text">Experience</span></a>
+      <a href="#projects" data-tip="Projects"><span class="nav-icon">◇</span><span class="nav-text">Projects</span></a>
+      <a href="#skills" data-tip="Skills"><span class="nav-icon">✦</span><span class="nav-text">Skills</span></a>
+      <a href="#contact" data-tip="Contact"><span class="nav-icon">↗</span><span class="nav-text">Contact</span></a>
     </nav>
-    <a class="nav-cta" href="mailto:architdora07@gmail.com">Let's talk <span>↗</span></a>
+
+    <div class="nav-actions">
+      <a class="icon-btn" href="https://github.com/Archit0720" target="_blank" rel="noreferrer" aria-label="GitHub" data-tip="GitHub">◉</a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noreferrer" aria-label="LinkedIn" data-tip="LinkedIn">in</a>
+      <button class="theme-toggle icon-btn" id="themeToggle" aria-label="Toggle dark mode" data-tip="Dark mode">
+        <span id="themeIcon">☾</span>
+      </button>
+    </div>
+
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <div class="availability"><i></i> AI ENGINEER</div>
-        <p class="hello">Hi, I'm Archit Dogra.</p>
-        <h1>Building AI that is <span>practical by design.</span></h1>
-        <p class="lead">I create intelligent applications, RAG systems, AI agents and automation tools—from the first idea to a working product.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">View projects <span>↓</span></a>
-          <a class="btn ghost" href="https://github.com/Archit0720" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> AI Engineer · Gurugram, India</div>
+        <h1>Building <span class="gradient-text">intelligent systems</span> that turn ideas into products.</h1>
+        <p class="hero-lead">
+          I’m Archit Dogra — an AI Engineer working across Agentic AI, Retrieval-Augmented Generation,
+          LLM workflows and practical AI applications.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn secondary" href="Archit_Dogra_Resume.pdf" target="_blank">View resume <span>↓</span></a>
         </div>
-        <div class="social-row">
-          <a href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <a href="mailto:architdora07@gmail.com">Email ↗</a>
+        <div class="hero-meta">
+          <span>Python</span><i></i><span>RAG</span><i></i><span>Agentic AI</span><i></i><span>Langflow</span>
         </div>
       </div>
 
-      <div class="hero-art" aria-hidden="true">
-        <div class="art-grid"></div>
-        <div class="halo"></div>
-        <div class="core"><small>ARCHIT.DOGRA</small><strong>AI</strong><span>ENGINEER</span></div>
-        <div class="chip chip-one"><i>✦</i><div><small>BUILDING</small><b>AI Agents</b></div></div>
-        <div class="chip chip-two"><i>⌁</i><div><small>WORKING WITH</small><b>RAG Systems</b></div></div>
-        <div class="chip chip-three"><i>●</i><div><small>FROM</small><b>Idea → Product</b></div></div>
+      <div class="hero-visual reveal delay-1">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="profile-ring">
+          <div class="profile-card">
+            <img src="assets/profile.jpg" alt="Archit Dogra">
+            <div class="profile-overlay">
+              <span>AI / ML Engineer</span>
+              <strong>Agentic AI · RAG</strong>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card card-top">
+          <span class="mini-icon">✦</span>
+          <div><small>Focus</small><b>Generative AI</b></div>
+        </div>
+        <div class="floating-card card-bottom">
+          <span class="mini-icon">⌘</span>
+          <div><small>Currently</small><b>Junior AI Engineer</b></div>
+        </div>
       </div>
     </section>
 
-    <section class="ticker" aria-label="Areas of focus">
-      <span>LLM Applications</span><i>✦</i><span>AI Agents</span><i>✦</i><span>RAG Systems</span><i>✦</i><span>Automation</span><i>✦</i><span>Full-Stack AI</span>
+    <section class="ticker" aria-label="Technology focus">
+      <div class="ticker-track">
+        <span>AGENTIC AI</span><b>✦</b><span>RAG</span><b>✦</b><span>LLM WORKFLOWS</span><b>✦</b>
+        <span>COMPUTER VISION</span><b>✦</b><span>AI MICROSERVICES</span><b>✦</b>
+        <span>AGENTIC AI</span><b>✦</b><span>RAG</span><b>✦</b><span>LLM WORKFLOWS</span><b>✦</b>
+      </div>
     </section>
 
     <section class="section about" id="about">
-      <div class="section-tag">01 — ABOUT</div>
-      <div class="about-main">
-        <h2>I turn AI concepts into <em>complete experiences.</em></h2>
-        <div class="about-text">
-          <p>I'm an AI Engineer focused on building useful LLM applications, intelligent workflows and clean full-stack products.</p>
-          <p>I enjoy working end to end: understanding the problem, preparing data, integrating models, designing APIs and creating the final interface.</p>
+      <div class="section-heading reveal">
+        <span class="section-number">01</span>
+        <div><p class="eyebrow">About me</p><h2>Engineering with <span class="gradient-text">AI at the center.</span></h2></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-main reveal">
+          <p class="large-copy">
+            I’m an AI Engineer with hands-on industry experience building <strong>Agentic AI systems,
+            RAG pipelines and production-oriented LLM workflows.</strong>
+          </p>
+          <p>
+            At Evalueserve, I work with Python and Langflow to turn AI ideas into practical business
+            solutions, while also working with prompt engineering, LLM evaluation and Docker-based
+            deployments.
+          </p>
+          <p>
+            Outside work, I build independent AI products to explore new patterns in memory,
+            retrieval, computer vision and multi-agent interaction.
+          </p>
+        </div>
+        <div class="about-stats reveal delay-1">
+          <div class="stat"><strong>2025</strong><span>Graduated in CSE (Hons.) · AIML</span></div>
+          <div class="stat"><strong>1.5+</strong><span>Years of professional AI experience</span></div>
+          <div class="stat"><strong>4</strong><span>Featured AI projects</span></div>
+          <div class="stat"><strong>AI</strong><span>RAG · Agents · Vision · LLMs</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-head">
-        <div><div class="section-tag">02 — PROJECTS</div><h2>Selected work.</h2></div>
-        <p>Actual projects from my GitHub. Every card opens the corresponding repository.</p>
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal">
+        <span class="section-number">02</span>
+        <div><p class="eyebrow">Experience & education</p><h2>The path so far.</h2></div>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Aug 2025 — Present</div>
+          <div class="timeline-content">
+            <span class="role-tag">Professional</span>
+            <h3>Junior AI Engineer</h3>
+            <h4>Evalueserve · Gurugram</h4>
+            <ul>
+              <li>Architect end-to-end AI workflows using Langflow and Python for internal business solutions.</li>
+              <li>Develop prompt engineering strategies and LLM evaluation workflows to improve response quality and reduce hallucinations.</li>
+              <li>Work with Docker-based deployments for AI microservices and production updates.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Feb 2025 — Jul 2025</div>
+          <div class="timeline-content">
+            <span class="role-tag">Internship</span>
+            <h3>AI Engineer Intern</h3>
+            <h4>Evalueserve · Gurugram</h4>
+            <ul>
+              <li>Built internal AI tools and chatbots.</li>
+              <li>Rapidly prototyped AI proof-of-concepts with multiple LLM frameworks.</li>
+              <li>Worked with the fundamentals of Docker and Kubernetes.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021 — 2025</div>
+          <div class="timeline-content">
+            <span class="role-tag">Education</span>
+            <h3>B.E. Computer Science Engineering (Hons.)</h3>
+            <h4>Chandigarh University · Specialization in AIML</h4>
+            <p>CGPA: <strong>8.10</strong></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-number">03</span>
+        <div><p class="eyebrow">Selected work</p><h2>Projects I’ve built.</h2></div>
       </div>
 
-      <div class="projects">
-        <a class="project project-wide" href="https://github.com/Archit0720/OmniMemory" target="_blank" rel="noopener noreferrer">
-          <div class="project-art memory"><div class="network"><b>M</b><i></i><i></i><i></i><i></i></div></div>
-          <div class="project-info"><span class="number">01 / FEATURED</span><h3>OmniMemory</h3><p>An AI-focused TypeScript project exploring useful memory capabilities for intelligent applications.</p><div class="pills"><span>TypeScript</span><span>AI</span><span>Memory</span></div><b class="view">View repository ↗</b></div>
-        </a>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-image"><img src="assets/omnimemory.png" alt="OmniMemory project thumbnail"><div class="project-index">01</div></div>
+          <div class="project-body">
+            <div class="project-top"><span>AI Memory · RAG</span><a href="https://github.com/Archit0720/OmniMemory" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            <h3>OmniMemory</h3>
+            <p>An AI-powered knowledge management system for document ingestion, semantic memory, summaries and chat over a personal knowledge base using RAG.</p>
+            <div class="tags"><span>Next.js</span><span>FastAPI</span><span>ChromaDB</span><span>Groq</span><span>LangChain</span></div>
+          </div>
+        </article>
 
-        <a class="project" href="https://github.com/Archit0720/RAG-ChatBot---Feedback-based-" target="_blank" rel="noopener noreferrer">
-          <div class="project-art rag"><div class="paper"><i></i><i></i><i></i></div><div class="bubble">?</div></div>
-          <div class="project-info"><span class="number">02 / RAG</span><h3>Feedback-Based RAG Chatbot</h3><p>Ask questions from supplied text and get alternate answers based on feedback.</p><div class="pills"><span>RAG</span><span>LLM</span><span>HTML</span></div><b class="view">View repository ↗</b></div>
-        </a>
+        <article class="project-card reveal delay-1">
+          <div class="project-image"><img src="assets/chatscope.png" alt="ChatScope AI project thumbnail"><div class="project-index">02</div></div>
+          <div class="project-body">
+            <div class="project-top"><span>Analytics · NLP</span><a href="https://github.com/Archit0720/ChatScope.AI" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            <h3>ChatScope.AI</h3>
+            <p>WhatsApp analytics and semantic chat exploration with activity insights, TF-IDF retrieval and optional Groq-powered RAG.</p>
+            <div class="tags"><span>Python</span><span>Streamlit</span><span>TF-IDF</span><span>NLP</span><span>Groq</span></div>
+          </div>
+        </article>
 
-        <a class="project" href="https://github.com/Archit0720/Custom-Agent-Chatbot" target="_blank" rel="noopener noreferrer">
-          <div class="project-art agent"><div class="bot"><i></i><i></i><span></span></div><div class="ring"></div></div>
-          <div class="project-info"><span class="number">03 / AGENTS</span><h3>Custom Agent Chatbot</h3><p>Create and chat with an AI agent inspired by a favourite fictional character.</p><div class="pills"><span>Python</span><span>Agents</span><span>Chatbot</span></div><b class="view">View repository ↗</b></div>
-        </a>
+        <article class="project-card reveal">
+          <div class="project-image"><img src="assets/persona.jpg" alt="Persona contextual chatbot project thumbnail"><div class="project-index">03</div></div>
+          <div class="project-body">
+            <div class="project-top"><span>Agentic AI · Chatbot</span><a href="https://github.com/Archit0720/Custom-Agent-Chatbot" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            <h3>Persona</h3>
+            <p>A character-contextual chatbot that lets users create and converse with fictional, movie, book or anime personas in real time.</p>
+            <div class="tags"><span>Python</span><span>LLMs</span><span>Groq</span><span>Prompting</span><span>Agents</span></div>
+          </div>
+        </article>
 
-        <a class="project project-wide"
-href="https://github.com/Archit0720/NightVision.AI"
-target="_blank"
-rel="noopener noreferrer">
-
-    <div class="project-art vision">
-        <div class="scanner">
-            <i></i>
-            <span></span>
-        </div>
-        <b>✦</b>
-    </div>
-
-    <div class="project-info">
-
-        <span class="number">
-            01 / FEATURED PROJECT
-        </span>
-
-        <h3>
-            NightVision AI
-        </h3>
-
-        <p>
-            A hybrid computer vision platform that combines
-            adaptive low-light enhancement, YOLOv8 object
-            detection, Groq Vision image analysis and AI
-            generated intelligence reports. The system
-            identifies model blind spots, reconciles
-            multimodal findings and generates downloadable
-            PDF reports with detection analytics and
-            scene intelligence.
-        </p>
-
-        <div class="pills">
-            <span>Computer Vision</span>
-            <span>YOLOv8</span>
-            <span>OpenCV</span>
-            <span>Groq Vision</span>
-            <span>Flask</span>
-            <span>Multimodal AI</span>
-        </div>
-
-        <b class="view">
-            View repository ↗
-        </b>
-
-    </div>
-
-</a>
+        <article class="project-card project-wide reveal delay-1">
+          <div class="project-image"><img src="assets/nightvision.png" alt="NightVision AI project thumbnail"><div class="project-index">04</div></div>
+          <div class="project-body">
+            <div class="project-top"><span>Computer Vision</span><a href="https://github.com/Archit0720/NightVision.AI" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            <h3>NightVision AI</h3>
+            <p>A hybrid image-analysis pipeline that enhances low-light imagery, detects objects and turns the visual output into deeper AI-assisted insights.</p>
+            <div class="tags"><span>Python</span><span>OpenCV</span><span>YOLOv8</span><span>Computer Vision</span><span>Multimodal AI</span></div>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="section skills" id="skills">
-      <div><div class="section-tag">03 — TOOLKIT</div><h2>Technologies I build with.</h2><p>A practical stack for turning AI experiments into usable products.</p></div>
-      <div class="skill-grid"><span>Python</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>FastAPI</span><span>OpenAI</span><span>Azure AI</span><span>RAG</span><span>REST APIs</span><span>AI Agents</span><span>Prompt Engineering</span><span>Automation</span></div>
+      <div class="section-heading reveal">
+        <span class="section-number">04</span>
+        <div><p class="eyebrow">Technical toolkit</p><h2>Tools I use to build.</h2></div>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-feature reveal">
+          <span class="skill-number">01</span><h3>Generative AI</h3>
+          <p>RAG, Agentic AI, prompt engineering, LLM evaluation, embeddings, semantic retrieval and AI workflows.</p>
+        </div>
+        <div class="skill-feature reveal delay-1">
+          <span class="skill-number">02</span><h3>Engineering</h3>
+          <p>Python, SQL, FastAPI, Flask, REST APIs, Docker, Git and production-oriented AI microservices.</p>
+        </div>
+        <div class="skill-feature reveal delay-2">
+          <span class="skill-number">03</span><h3>AI / ML</h3>
+          <p>Computer vision, NLP, deep learning, data processing and practical model integration.</p>
+        </div>
+      </div>
+      <div class="skill-cloud reveal">
+        <span>Python</span><span>SQL</span><span>Langflow</span><span>LangChain</span><span>RAG</span>
+        <span>Agentic AI</span><span>Prompt Engineering</span><span>LLM Evaluation</span><span>Groq</span>
+        <span>FastAPI</span><span>Flask</span><span>Docker</span><span>Git</span><span>ChromaDB</span>
+        <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>OpenCV</span><span>YOLO</span>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="contact-orb"></div>
-      <div class="section-tag">04 — CONTACT</div>
-      <h2>Let's build something <em>worth using.</em></h2>
-      <p>Open to conversations around AI engineering, automation and full-stack product development.</p>
-      <div class="actions center"><a class="btn primary" href="mailto:architdora07@gmail.com">Email me ↗</a><a class="btn ghost" href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+    <section class="section education" id="education">
+      <div class="section-heading reveal">
+        <span class="section-number">05</span>
+        <div><p class="eyebrow">Education</p><h2>Where I started.</h2></div>
+      </div>
+      <div class="education-card reveal">
+        <div class="edu-mark">CU</div>
+        <div>
+          <span class="role-tag">2021 — 2025</span>
+          <h3>Chandigarh University</h3>
+          <p>B.E. Computer Science Engineering (Hons.) with specialization in Artificial Intelligence & Machine Learning.</p>
+          <strong>CGPA · 8.10</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">06 · Get in touch</p>
+          <h2>Have an AI problem worth building?</h2>
+          <p>Let’s talk about AI products, engineering opportunities, collaborations or interesting ideas.</p>
+        </div>
+        <a class="contact-email" href="mailto:architdogra07@gmail.com">architdogra07@gmail.com <span>↗</span></a>
+      </div>
     </section>
   </main>
 
-  <footer><span>© <b id="year"></b> Archit Dogra</span><span>AI Engineer</span><div><a href="https://github.com/Archit0720" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:architdora07@gmail.com">Email</a></div></footer>
+  <footer class="footer">
+    <span>© 2026 Archit Dogra</span>
+    <span>Built with curiosity + AI.</span>
+    <div>
+      <a href="https://github.com/Archit0720" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ad0720/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:architdogra07@gmail.com">Email</a>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

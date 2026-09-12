@@ -1,20 +1,31 @@
-# Archit Dogra — Portfolio
+# Archit Dogra — Personal Portfolio
 
-A responsive, single-page AI engineering portfolio designed for GitHub Pages.
+A responsive portfolio website for Archit Dogra, AI Engineer.
 
-## Customize before publishing
+## Stack
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Fonts
 
-1. Replace every `YOUR_USERNAME` in `index.html`.
-2. Replace `YOUR_EMAIL` with your email address.
-3. Put your resume at `assets/Archit_Dogra_Resume.pdf`.
-4. Edit any project wording that may disclose confidential information.
+## Included
+- Light / dark mode with saved preference
+- Responsive navigation
+- Hover tooltips and navbar effects
+- Scroll reveal animations
+- Project showcase using supplied thumbnails
+- Experience and education timeline
+- Resume link
+- GitHub and LinkedIn links
 
-## Publish with GitHub Pages
-
-1. Create a public repository named `YOUR_USERNAME.github.io`.
+## GitHub Pages
+1. Create a repository named `Archit0720.github.io` (or use your preferred Pages repository).
 2. Upload the contents of this folder to the repository root.
-3. Commit to the `main` branch.
-4. In repository **Settings → Pages**, choose **Deploy from a branch**, `main`, `/ (root)`.
-5. Your site will be available at `https://YOUR_USERNAME.github.io/`.
+3. Go to **Settings → Pages**.
+4. Select **Deploy from a branch**, choose `main` and `/root`.
+5. Your site will be available at your GitHub Pages URL.
 
-No build step or framework is required.
+## Before publishing
+- Check that the resume is the version you want public.
+- Test all links on mobile and desktop.
+- If you later add live demos for projects, replace the GitHub-only links in `index.html`.
