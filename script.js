@@ -39,7 +39,8 @@ const expDots = [...document.querySelectorAll('#expDots button')];
 let expIndex = 0;
 function setExperienceSlide(index){
   if(!expTrack) return;
-  expIndex = (index + 3) % 3;
+  const count = expTrack.querySelectorAll('.experience-slide').length;
+  expIndex = (index + count) % count;
   expTrack.style.transform = `translateX(-${expIndex * 100}%)`;
   expDots.forEach((dot,i)=>dot.classList.toggle('active',i===expIndex));
 }
@@ -50,7 +51,8 @@ expDots.forEach(dot=>dot.addEventListener('click',()=>setExperienceSlide(Number(
 // Theme preference, persisted locally.
 const themeToggle = document.getElementById('themeToggle');
 const savedTheme = localStorage.getItem('archit-theme');
-if(savedTheme === 'dark'){ document.body.classList.add('dark'); document.documentElement.classList.add('dark'); }
+const initialTheme = savedTheme || 'dark';
+if(initialTheme === 'dark'){ document.body.classList.add('dark'); document.documentElement.classList.add('dark'); }
 function updateThemeIcon(){
   const icon = themeToggle?.querySelector('.material-symbols-outlined');
   if(icon) icon.textContent = document.body.classList.contains('dark') ? 'light_mode' : 'dark_mode';
