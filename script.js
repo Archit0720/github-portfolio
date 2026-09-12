@@ -1,52 +1,18 @@
-const root = document.documentElement;
-const themeToggle = document.getElementById("themeToggle");
-const themeIcon = document.getElementById("themeIcon");
-const mobileMenu = document.getElementById("mobileMenu");
-const navbar = document.getElementById("navbar");
-const progress = document.getElementById("progress");
-
-function setTheme(theme) {
-  root.setAttribute("data-theme", theme);
-  localStorage.setItem("archit-theme", theme);
-  themeIcon.textContent = theme === "dark" ? "☀" : "☾";
-  themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
-  themeToggle.dataset.tip = theme === "dark" ? "Light mode" : "Dark mode";
-}
-const saved = localStorage.getItem("archit-theme");
-setTheme(saved || "light");
-
-themeToggle.addEventListener("click", () => {
-  setTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
-});
-
-mobileMenu.addEventListener("click", () => navbar.classList.toggle("menu-open"));
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => navbar.classList.remove("menu-open"));
-});
-
-function updateProgress() {
-  const scrollTop = window.scrollY;
-  const height = document.documentElement.scrollHeight - window.innerHeight;
-  progress.style.width = `${height > 0 ? (scrollTop / height) * 100 : 0}%`;
-}
-window.addEventListener("scroll", updateProgress, { passive: true });
-updateProgress();
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", (e) => {
-    const target = document.querySelector(anchor.getAttribute("href"));
-    if (!target) return;
-    e.preventDefault();
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-});
+(function(){
+  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+  const cursor=$('.cursor-glow');
+  if(cursor && matchMedia('(pointer:fine)').matches){window.addEventListener('pointermove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'})}
+  const current=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+  $$('.side-nav a').forEach(a=>{const href=a.getAttribute('href').split('/').pop().split('#')[0].toLowerCase()||'index.html'; if(href===current || (current===''&&href==='index.html'))a.classList.add('active')});
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+  $$('.reveal').forEach(el=>io.observe(el));
+  // hover tilt on desktop cards
+  if(matchMedia('(pointer:fine)').matches){
+    $$('.project,.mini-card,.contact-link').forEach(card=>{
+      card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(900px) rotateX(${-y*3}deg) rotateY(${x*3}deg) translateY(-5px)`});
+      card.addEventListener('pointerleave',()=>card.style.transform='');
+    });
+  }
+  // subtle page transition
+  document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a||a.target==='_blank'||a.origin!==location.origin||a.getAttribute('href')?.startsWith('#'))return;e.preventDefault();document.body.style.opacity='.45';document.body.style.transition='opacity .18s';setTimeout(()=>location.href=a.href,150)});
+})();
