@@ -1,20 +1,14 @@
-# Archit Dogra — AI Engineer Portfolio
+# Archit Dogra — Portfolio
 
-A static multi-page portfolio designed for GitHub Pages.
+Static portfolio inspired structurally by Aayush Gangwar's sidebar/article navigation pattern and visually by Archit Agrawal's clean purple-accent portfolio aesthetic.
 
-## Pages
-- `index.html` — About / landing page with experience, projects and contact previews
-- `experience.html` — full career timeline
-- `projects.html` — equal-weight project grid
-- `skills.html` — animated linked-list skill map
-- `contact.html` — contact page
+## Structure
+- Fixed profile sidebar with contact details
+- About / Resume / Portfolio article navigation
+- Resume page contains experience and skills
+- Portfolio page contains equal-sized project cards
+- No dark-mode toggle
+- Responsive layout
 
-## Assets
-- `assets/profile.jpg`
-- `assets/omnimemory.png`
-- `assets/chatscope.png`
-- `assets/persona.jpg`
-- `assets/nightvision.png`
-- `Archit_Dogra_Resume.pdf`
-
-No build step is required. Upload the files to the root of a GitHub Pages repository and publish from the `main` branch.
+## GitHub Pages
+Upload the contents of this folder to the root of your existing GitHub Pages repository.
